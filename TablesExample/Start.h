@@ -6,10 +6,14 @@
 //  Copyright © 2016 Christian Barragan. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
+#import "Declarations.h"
+#import "Intro.h"
 
-@interface Start : UIViewController
+@interface Start : UIViewController<UIPageViewControllerDelegate, UIPageViewControllerDataSource>
 
+@property (strong, nonatomic) UIPageViewController *pageViewController;
 
 @end
 
